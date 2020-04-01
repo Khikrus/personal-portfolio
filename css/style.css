@@ -10,7 +10,7 @@ html {
 }
 
 .container {
-	padding: 80px 300px 0 300px;
+	padding: 100px 300px 0 300px;
 }
 
 nav ul,
@@ -35,6 +35,9 @@ header {
 .navbar {
     background-color: #181818;
     padding-top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
 }
 
 header h1,
@@ -319,6 +322,16 @@ form textarea {
     left: 50%;
     right: 50%;
     transform: translateX(-50%);
+}
+
+input:focus::-webkit-input-placeholder {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+textarea:focus::-webkit-input-placeholder {
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
 form input:last-child {
