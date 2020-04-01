@@ -248,7 +248,7 @@ div[class^='bar-'] {
 .bar-html,
 .bar-css,
 .bar-javascript {
-    width: calc(0 - 6px);
+    width: calc(0% - 6px);
 }
 
 .work-category button {
